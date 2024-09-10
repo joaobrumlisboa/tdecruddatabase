@@ -6,6 +6,11 @@ Copie os dados do bd.txt para o MySQL e execute.
 
 
 
+
+
+
+
+
 Aplicação:
 
 Instale o XAMPP.
