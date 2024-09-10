@@ -1,0 +1,23 @@
+CREATE DATABASE TDE;
+USE TDE;
+
+CREATE TABLE Pessoa (
+    id INT AUTO_INCREMENT UNIQUE,
+    cpf VARCHAR(15) PRIMARY KEY,
+    nome VARCHAR(30),
+    fk_Cor_favorita_id INT
+);
+
+CREATE TABLE Cor_favorita (
+    id INT AUTO_INCREMENT PRIMARY KEY UNIQUE,
+    nome VARCHAR(10)
+);
+ 
+ALTER TABLE Pessoa ADD CONSTRAINT FK_Pessoa_2
+    FOREIGN KEY (fk_Cor_favorita_id)
+    REFERENCES Cor_favorita (id)
+    ON DELETE CASCADE;
+    
+    
+    
+    
